@@ -23,17 +23,7 @@ const createUser = async(req, res) => {
     }
 } 
 
-// userRouter.get('/users', async(req, res) => {
-//     try{
-//         const users = await UserModel.find()
-//         res.send(users)
-//     }
-//     catch(err){
-//         res.send({
-//             message:err.message
-//         })
-//     }
-// })
+
 const getUser = async(req, res) => {
     try{
         const user = await UserModel.find()

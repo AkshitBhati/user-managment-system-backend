@@ -4,24 +4,6 @@ import UserModel from "../Schema/userSchema.js"
 
 const userRouter = express.Router()
 
-// userRouter.post('/users', async(req, res) => {
-//     const { name, email, phone  } = req.body
-//     try{
-    //     let user = new UserModel({name, email, phone})
-    //     await user.save()
-    //     res.send({
-    //         message:"user is created",
-    //         status:1
-    //     })
-    // }
-    // catch(err){
-    //     res.send({
-    //         message:err.message,
-    //         status:0
-    //     })
-    // }
-// }) 
-
 const createUser = async(req, res) => {
     const { name, email, phone  } = req.body
     try{
